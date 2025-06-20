@@ -4,11 +4,12 @@ html {
 
 .header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr min-content 1fr;
   justify-items: center;
   align-items: center;
   padding-top: 95px;
   padding-bottom: 95px;
+  font-size: 18px;
 }
 
 .header__links-list {
@@ -53,6 +54,9 @@ html {
   position: relative;
   background-image: url('../images/cover.jpg');
   background-size: cover;
+  background-position: center;
+  width: 1100px;
+  height: 757px;
 }
 
 .overlay {
@@ -80,6 +84,7 @@ html {
   font-size: 100px;
   letter-spacing: 0.3em;
   display: block;
+  margin-bottom: 20px;
 }
 
 .aligned-text_center {
@@ -90,10 +95,15 @@ html {
   justify-self: end;
 }
 
+.last-letter {
+  letter-spacing: 0;
+}
+
 .cover__description {
-  padding-top: 118px;
-  padding-bottom: 60px;
+  margin-top: 106px;
+  margin-right: 50px;
   display: flex;
+  align-items: center;
 }
 
 
@@ -102,7 +112,7 @@ html {
   z-index: 2;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-size: 21px;
+  font-size: 22px;
   word-spacing: 0.9em;
   padding-left: 50px;
 }
@@ -114,11 +124,10 @@ html {
   z-index: 2;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 22px;
   border: 1px solid #FFFFFF;
-  padding: 12px 32px ;
-  margin-left: 138px;
-  bottom: 12px;
+  padding: 12px 32px 11px 31px ;
+  margin-left: auto;
 }
 
 .lots {
@@ -197,6 +206,7 @@ html {
   display: inline-block;
   margin-left: 40px;
   margin-top: 30px;
+  font-size: 20px;
 }
 
 .about {
@@ -214,10 +224,10 @@ html {
   border-radius: 50%;
   background-color: #000000;
   justify-self: center;
+  align-self: start;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 35px;
 }
 
 .about__logo-image {
@@ -227,7 +237,9 @@ html {
 
 .about__column {
   grid-column: 2;
+  margin-left: 25px;
   margin-top: 133px;
+  margin-right: 28px;
   display: flex;
   flex-direction: column;
 }
@@ -243,6 +255,7 @@ html {
   margin-bottom: 24px;
   align-self: end;
   font-size: 20px;
+  line-height: 24px;
 }
 
 .reset-margin-bottom {
@@ -254,6 +267,7 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 98px;
+  height: 180px;
 }
 
 .footer__address {
@@ -261,6 +275,7 @@ html {
   font-style: normal;
   justify-self: center;
   max-width: 240px;
+  font-size: 18px;
 }
 
 .footer__menu {
@@ -289,7 +304,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer__social-icon {
